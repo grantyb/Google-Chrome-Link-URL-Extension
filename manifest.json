@@ -1,0 +1,13 @@
+{
+  "name": "Links",
+  "version": "0.1",
+  "description": "See the URL in an overlay when you hover over links",
+  "background_page": "background.html",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "css": ["extension.css"],
+      "js": ["jquery-1.4.2.js", "extension.js"]
+    }
+  ]
+}

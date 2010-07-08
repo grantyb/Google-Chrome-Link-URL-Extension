@@ -1,0 +1,20 @@
+body div#link-overlay {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: transparent;	
+	background-color: #000000;
+	color: #ffffff;
+	opacity: 0;
+	font-size: 13px;
+	padding: 5px 5px 30px;
+	font-family: 'lucida grande', 'lucida sans unicode';
+	line-height: 1;
+	margin: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	list-style: none;
+	text-decoration: none;
+}
