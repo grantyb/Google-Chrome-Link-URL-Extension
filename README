@@ -1,0 +1,18 @@
+This Chrome extension adds a transparent overlay at the bottom of any web pages you visit.
+
+When you hover over any link, the overlay shows up and tells you the destination of the link.
+
+When you move away from the link, the overlay will disappear.
+
+You can install the extension by
+
+1) Download the source to your computer
+2) In Chrome, go to Window | Extensions
+3) Click on the "Developer Mode" link
+4) Click on "Load unpacked extension..."
+5) Navigate to the directory that you checked out the source code to
+6) Click "Open"
+
+...and you're done!
+
+Please send any feedback to grantyb (at) gmail (dot) com
