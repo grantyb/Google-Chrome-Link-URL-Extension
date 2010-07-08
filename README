@@ -4,7 +4,8 @@ When you hover over any link, the overlay shows up and tells you the destination
 
 When you move away from the link, the overlay will disappear.
 
-You can install the extension by
+Installation
+============
 
 1) Download the source to your computer
 2) In Chrome, go to Window | Extensions
@@ -13,6 +14,8 @@ You can install the extension by
 5) Navigate to the directory that you checked out the source code to
 6) Click "Open"
 
-...and you're done!
+Feedback
+========
 
 Please send any feedback to grantyb (at) gmail (dot) com
+
