@@ -17,4 +17,6 @@ body div#link-overlay {
 	vertical-align: baseline;
 	list-style: none;
 	text-decoration: none;
+	text-align: left;
+	z-index: 1000;
 }
