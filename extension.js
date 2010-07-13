@@ -1,11 +1,9 @@
 var overlay = $("<div id='link-overlay'>&nbsp;</div>");
 $("body").append($(overlay));
-var overlayHeight = 48; // Initially set to best guess - based on 13px font height, 30px bottom padding and 5px top padding
-var overlayHeightCalculated = false;
+var overlayHeight = 55; // Initially set to best guess - based on 13px font height, 30px bottom padding and 10px top padding
 $("a[href],area[href]").live("mouseover", function(e) {
-	if ( !overlayHeightCalculated && $(overlay).outerHeight() != 0 ) {
+	if ( $(overlay).outerHeight() != 0 ) {
 		overlayHeight = $(overlay).outerHeight();
-		overlayHeightCalculated = true;
 	}
 	if ( e.clientY < $(window).height() - overlayHeight ) {
 		$(overlay).css("top", "auto");
