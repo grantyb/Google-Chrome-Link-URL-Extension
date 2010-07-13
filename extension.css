@@ -8,7 +8,7 @@ body div#link-overlay {
 	color: #ffffff;
 	opacity: 0;
 	font-size: 13px;
-	padding: 5px 5px 30px;
+	padding: 10px 5px 30px 5px;
 	font-family: 'lucida grande', 'lucida sans unicode';
 	line-height: 1;
 	margin: 0;
@@ -19,4 +19,19 @@ body div#link-overlay {
 	text-decoration: none;
 	text-align: left;
 	z-index: 1000;
+}
+
+body div#link-overlay ul {
+	display: inline;
+	width: auto;
+}
+
+body div#link-overlay ul li {
+	clear: left;
+	list-style: none;
+	margin-top: 8px;
+	padding: 8px;
+	border-radius: 3px;
+	background-color: #dddddd;
+	color: #000000;
 }
