@@ -2,6 +2,8 @@ This Chrome extension adds a transparent overlay at the bottom of any web pages 
 
 When you hover over any link, the overlay shows up and tells you the destination of the link.
 
+If the page uses jQuery, then links with click handlers will also reveal the source code for the handler.
+
 When you move away from the link, the overlay will disappear.
 
 Installation
