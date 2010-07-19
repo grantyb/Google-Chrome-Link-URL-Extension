@@ -27,14 +27,16 @@ $("a[href],area[href]").live("mouseover", function(e) {
 				if ( clicks ) {\
 					var eventSource = '<ul>';\
 					jQuery.each(clicks, function(name, value) {\
-						var txt = '' + value.handler;\
-						txt = txt.replace(/&/g,'&amp;');\
-						txt = txt.replace(/</g,'&lt;');\
-						txt = txt.replace(/>/g,'&gt;');\
-						txt = txt.replace(/\\n/g,'<br/>');\
-						txt = txt.replace(/\\t/g,'&nbsp;&nbsp;');\
-						txt = txt.replace(/ /g,'&nbsp;');\
-						eventSource = eventSource + '<li>' + txt + '</li>';\
+						if ( typeof(value.handler) != 'undefined' ) {\
+							var txt = '' + value.handler;\
+							txt = txt.replace(/&/g,'&amp;');\
+							txt = txt.replace(/</g,'&lt;');\
+							txt = txt.replace(/>/g,'&gt;');\
+							txt = txt.replace(/\\n/g,'<br/>');\
+							txt = txt.replace(/\\t/g,'&nbsp;&nbsp;');\
+							txt = txt.replace(/ /g,'&nbsp;');\
+							eventSource = eventSource + '<li>' + txt + '</li>';\
+						}\
 					});\
 					eventSource = eventSource + '</ul>';\
 					$('.chrome-link-viewer-extension').attr('data-events', eventSource);\
